@@ -6,5 +6,6 @@ target 'TimeWork' do
   use_frameworks!
 
   # Pods for TimeWork
+  pod 'RxSwift'
 
 end
