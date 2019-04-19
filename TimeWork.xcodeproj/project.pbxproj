@@ -21,6 +21,14 @@
 		A282F22B2269744B0039DAB4 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2292269744B0039DAB4 /* TutorialViewController.swift */; };
 		A282F22F226979200039DAB4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F22E226979200039DAB4 /* Reachability.swift */; };
 		A282F232226979870039DAB4 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F231226979870039DAB4 /* BlurEffect.swift */; };
+		A282F2352269814B0039DAB4 /* URLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A282F2342269814B0039DAB4 /* URLs.plist */; };
+		A282F237226981770039DAB4 /* URLInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F236226981770039DAB4 /* URLInfo.swift */; };
+		A282F239226982300039DAB4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F238226982300039DAB4 /* Endpoint.swift */; };
+		A282F23C226985CC0039DAB4 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F23B226985CC0039DAB4 /* Value.swift */; };
+		A282F23E226985F50039DAB4 /* CustomFieldIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F23D226985F50039DAB4 /* CustomFieldIssue.swift */; };
+		A282F240226986AE0039DAB4 /* AssignedTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F23F226986AE0039DAB4 /* AssignedTo.swift */; };
+		A282F242226986DC0039DAB4 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F241226986DC0039DAB4 /* Issue.swift */; };
+		A282F244226987330039DAB4 /* IssuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F243226987330039DAB4 /* IssuesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,14 @@
 		A282F2292269744B0039DAB4 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		A282F22E226979200039DAB4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A282F231226979870039DAB4 /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		A282F2342269814B0039DAB4 /* URLs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URLs.plist; sourceTree = "<group>"; };
+		A282F236226981770039DAB4 /* URLInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInfo.swift; sourceTree = "<group>"; };
+		A282F238226982300039DAB4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A282F23B226985CC0039DAB4 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		A282F23D226985F50039DAB4 /* CustomFieldIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldIssue.swift; sourceTree = "<group>"; };
+		A282F23F226986AE0039DAB4 /* AssignedTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignedTo.swift; sourceTree = "<group>"; };
+		A282F241226986DC0039DAB4 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		A282F243226987330039DAB4 /* IssuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 		A282F2062269641A0039DAB4 /* TimeWork */ = {
 			isa = PBXGroup;
 			children = (
+				A282F233226981080039DAB4 /* Resources */,
 				A282F22C2269789A0039DAB4 /* Conveniences */,
 				A282F222226973660039DAB4 /* Scenes */,
 				A282F21A226966800039DAB4 /* Models */,
@@ -111,6 +128,7 @@
 		A282F2192269666E0039DAB4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A282F238226982300039DAB4 /* Endpoint.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 		A282F21A226966800039DAB4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A282F23A226985020039DAB4 /* Issues */,
 				A282F21B226966920039DAB4 /* Users */,
 			);
 			path = Models;
@@ -192,6 +211,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A282F233226981080039DAB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A282F2342269814B0039DAB4 /* URLs.plist */,
+				A282F236226981770039DAB4 /* URLInfo.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A282F23A226985020039DAB4 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				A282F23B226985CC0039DAB4 /* Value.swift */,
+				A282F23D226985F50039DAB4 /* CustomFieldIssue.swift */,
+				A282F23F226986AE0039DAB4 /* AssignedTo.swift */,
+				A282F241226986DC0039DAB4 /* Issue.swift */,
+				A282F243226987330039DAB4 /* IssuesResponse.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +296,7 @@
 				A282F227226973CB0039DAB4 /* Welcome.storyboard in Resources */,
 				A282F20F2269641C0039DAB4 /* Assets.xcassets in Resources */,
 				A282F20D2269641A0039DAB4 /* Main.storyboard in Resources */,
+				A282F2352269814B0039DAB4 /* URLs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,13 +356,20 @@
 			files = (
 				A282F21F22696EF60039DAB4 /* User.swift in Sources */,
 				A282F22B2269744B0039DAB4 /* TutorialViewController.swift in Sources */,
+				A282F240226986AE0039DAB4 /* AssignedTo.swift in Sources */,
 				A282F21D22696E990039DAB4 /* CustomField.swift in Sources */,
 				A282F22A2269744B0039DAB4 /* TutorialPageViewController.swift in Sources */,
+				A282F242226986DC0039DAB4 /* Issue.swift in Sources */,
 				A282F20A2269641A0039DAB4 /* ViewController.swift in Sources */,
+				A282F237226981770039DAB4 /* URLInfo.swift in Sources */,
 				A282F22122696F310039DAB4 /* UserData.swift in Sources */,
 				A282F232226979870039DAB4 /* BlurEffect.swift in Sources */,
+				A282F244226987330039DAB4 /* IssuesResponse.swift in Sources */,
 				A282F22F226979200039DAB4 /* Reachability.swift in Sources */,
+				A282F23E226985F50039DAB4 /* CustomFieldIssue.swift in Sources */,
+				A282F239226982300039DAB4 /* Endpoint.swift in Sources */,
 				A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */,
+				A282F23C226985CC0039DAB4 /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
