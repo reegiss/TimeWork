@@ -12,6 +12,9 @@
 		A282F20D2269641A0039DAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A282F20B2269641A0039DAB4 /* Main.storyboard */; };
 		A282F20F2269641C0039DAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A282F20E2269641C0039DAB4 /* Assets.xcassets */; };
 		A282F2122269641C0039DAB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A282F2102269641C0039DAB4 /* LaunchScreen.storyboard */; };
+		A282F21D22696E990039DAB4 /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F21C22696E990039DAB4 /* CustomField.swift */; };
+		A282F21F22696EF60039DAB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F21E22696EF60039DAB4 /* User.swift */; };
+		A282F22122696F310039DAB4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F22022696F310039DAB4 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A282F20E2269641C0039DAB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A282F2112269641C0039DAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A282F2132269641C0039DAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A282F21C22696E990039DAB4 /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
+		A282F21E22696EF60039DAB4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A282F22022696F310039DAB4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		A282F2062269641A0039DAB4 /* TimeWork */ = {
 			isa = PBXGroup;
 			children = (
+				A282F21A226966800039DAB4 /* Models */,
+				A282F2192269666E0039DAB4 /* Services */,
 				A282F2072269641A0039DAB4 /* AppDelegate.swift */,
 				A282F2092269641A0039DAB4 /* ViewController.swift */,
 				A282F20B2269641A0039DAB4 /* Main.storyboard */,
@@ -62,6 +70,31 @@
 				A282F2132269641C0039DAB4 /* Info.plist */,
 			);
 			path = TimeWork;
+			sourceTree = "<group>";
+		};
+		A282F2192269666E0039DAB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A282F21A226966800039DAB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A282F21B226966920039DAB4 /* Users */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A282F21B226966920039DAB4 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				A282F21C22696E990039DAB4 /* CustomField.swift */,
+				A282F21E22696EF60039DAB4 /* User.swift */,
+				A282F22022696F310039DAB4 /* UserData.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A282F21F22696EF60039DAB4 /* User.swift in Sources */,
+				A282F21D22696E990039DAB4 /* CustomField.swift in Sources */,
 				A282F20A2269641A0039DAB4 /* ViewController.swift in Sources */,
+				A282F22122696F310039DAB4 /* UserData.swift in Sources */,
 				A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
