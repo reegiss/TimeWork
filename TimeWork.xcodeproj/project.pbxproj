@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943D6E3034FE6461B6767F98 /* Pods_TimeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7CE80FA2916DAECA9B521C /* Pods_TimeWork.framework */; };
 		A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2072269641A0039DAB4 /* AppDelegate.swift */; };
 		A282F20A2269641A0039DAB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2092269641A0039DAB4 /* ViewController.swift */; };
 		A282F20D2269641A0039DAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A282F20B2269641A0039DAB4 /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D7CE80FA2916DAECA9B521C /* Pods_TimeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DF4556E6B3D8EF6CF1FC53 /* Pods-TimeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWork.debug.xcconfig"; path = "Target Support Files/Pods-TimeWork/Pods-TimeWork.debug.xcconfig"; sourceTree = "<group>"; };
+		8804F65589AE65AF07EE00E7 /* Pods-TimeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWork.release.xcconfig"; path = "Target Support Files/Pods-TimeWork/Pods-TimeWork.release.xcconfig"; sourceTree = "<group>"; };
 		A282F2042269641A0039DAB4 /* TimeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282F2072269641A0039DAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A282F2092269641A0039DAB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943D6E3034FE6461B6767F98 /* Pods_TimeWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398E9B312D43179D9271EA6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D7CE80FA2916DAECA9B521C /* Pods_TimeWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55E52894E5C70C757B8846B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51DF4556E6B3D8EF6CF1FC53 /* Pods-TimeWork.debug.xcconfig */,
+				8804F65589AE65AF07EE00E7 /* Pods-TimeWork.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A282F1FB2269641A0039DAB4 = {
 			isa = PBXGroup;
 			children = (
 				A282F2062269641A0039DAB4 /* TimeWork */,
 				A282F2052269641A0039DAB4 /* Products */,
+				55E52894E5C70C757B8846B2 /* Pods */,
+				398E9B312D43179D9271EA6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A282F2162269641C0039DAB4 /* Build configuration list for PBXNativeTarget "TimeWork" */;
 			buildPhases = (
+				2DFC846080AF5AC68C04883A /* [CP] Check Pods Manifest.lock */,
 				A282F2002269641A0039DAB4 /* Sources */,
 				A282F2012269641A0039DAB4 /* Frameworks */,
 				A282F2022269641A0039DAB4 /* Resources */,
@@ -162,6 +188,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DFC846080AF5AC68C04883A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A282F2002269641A0039DAB4 /* Sources */ = {
@@ -316,6 +367,7 @@
 		};
 		A282F2172269641C0039DAB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DF4556E6B3D8EF6CF1FC53 /* Pods-TimeWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +386,7 @@
 		};
 		A282F2182269641C0039DAB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8804F65589AE65AF07EE00E7 /* Pods-TimeWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
