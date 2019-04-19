@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		943D6E3034FE6461B6767F98 /* Pods_TimeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7CE80FA2916DAECA9B521C /* Pods_TimeWork.framework */; };
+		A2073C52226A368300AAEC03 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2073C51226A368300AAEC03 /* RoundButton.swift */; };
 		A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2072269641A0039DAB4 /* AppDelegate.swift */; };
 		A282F20A2269641A0039DAB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2092269641A0039DAB4 /* ViewController.swift */; };
 		A282F20D2269641A0039DAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A282F20B2269641A0039DAB4 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		1D7CE80FA2916DAECA9B521C /* Pods_TimeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DF4556E6B3D8EF6CF1FC53 /* Pods-TimeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWork.debug.xcconfig"; path = "Target Support Files/Pods-TimeWork/Pods-TimeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		8804F65589AE65AF07EE00E7 /* Pods-TimeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWork.release.xcconfig"; path = "Target Support Files/Pods-TimeWork/Pods-TimeWork.release.xcconfig"; sourceTree = "<group>"; };
+		A2073C51226A368300AAEC03 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A282F2042269641A0039DAB4 /* TimeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282F2072269641A0039DAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A282F2092269641A0039DAB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 				8804F65589AE65AF07EE00E7 /* Pods-TimeWork.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2073C50226A362C00AAEC03 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A2073C51226A368300AAEC03 /* RoundButton.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		A282F1FB2269641A0039DAB4 = {
@@ -189,6 +199,7 @@
 		A282F22C2269789A0039DAB4 /* Conveniences */ = {
 			isa = PBXGroup;
 			children = (
+				A2073C50226A362C00AAEC03 /* UI */,
 				A282F2302269796F0039DAB4 /* Extensions */,
 				A282F22D226979040039DAB4 /* Network */,
 			);
@@ -368,6 +379,7 @@
 				A282F22F226979200039DAB4 /* Reachability.swift in Sources */,
 				A282F23E226985F50039DAB4 /* CustomFieldIssue.swift in Sources */,
 				A282F239226982300039DAB4 /* Endpoint.swift in Sources */,
+				A2073C52226A368300AAEC03 /* RoundButton.swift in Sources */,
 				A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */,
 				A282F23C226985CC0039DAB4 /* Value.swift in Sources */,
 			);

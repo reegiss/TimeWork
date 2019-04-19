@@ -43,7 +43,7 @@ class TutorialViewController: UIViewController {
             print("sem conexao")
         }
                 
-        self.addBlurArea(area: self.view.frame, style: .dark, alpha: 0.75)
+        self.addBlurArea(area: self.view.frame, style: .dark, alpha: 0.8)
         
         // Do any additional setup after loading the view.
         pageControl.addTarget(self, action: Selector(("didChangePageControlValue")), for: .valueChanged)
