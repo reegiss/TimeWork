@@ -1,16 +1,36 @@
 PODS:
+  - CommonCryptoModule (1.0.2)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
   - RxSwift (4.5.0)
+  - SideMenu (5.0.3)
 
 DEPENDENCIES:
+  - CommonCryptoModule
+  - Material
   - RxSwift
+  - SideMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CommonCryptoModule
+    - Material
+    - Motion
     - RxSwift
+    - SideMenu
 
 SPEC CHECKSUMS:
+  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
 
-PODFILE CHECKSUM: 9feed8325bb7b3c44951e992a887d54033c44ee3
+PODFILE CHECKSUM: 79911e06817a07ec8695c6c01ce7bf57ee1ad400
 
 COCOAPODS: 1.6.1

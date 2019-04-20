@@ -6,6 +6,9 @@ target 'TimeWork' do
   use_frameworks!
 
   # Pods for TimeWork
+  pod 'SideMenu'
   pod 'RxSwift'
+  pod 'Material'
+  pod 'CommonCryptoModule'
 
 end
