@@ -1,5 +1,5 @@
 //
-//  Value.swift
+//  LoginRequest.swift
 //  TimeWork
 //
 //  Created by Regis Araujo Melo on 19/04/19.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-enum Value {
-    case string(String)
-    case stringArray([String])
+class LoginRequest: Codable {
+    var login: String?
+    var password: String?
+    
+    
 }
