@@ -8,16 +8,11 @@
 
 import Foundation
 
-class IssuesResponse {
-    let issues: [Issue]?
-    let totalCount: Int?
-    let offset: Int?
-    let limit: Int?
+class IssuesResponse: Codable {
     
-    init(issues: [Issue]?, totalCount: Int?, offset: Int?, limit: Int?) {
-        self.issues = issues
-        self.totalCount = totalCount
-        self.offset = offset
-        self.limit = limit
+    let issue: Issue?
+    
+    init(issue: Issue?) {
+        self.issue = issue
     }
 }

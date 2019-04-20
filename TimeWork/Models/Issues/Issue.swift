@@ -8,37 +8,29 @@
 
 import Foundation
 
-class Issue {
+class Issue: Codable {
     let id: Int?
-    let project: AssignedTo?
-    let tracker: AssignedTo?
-    let status: AssignedTo?
-    let priority: AssignedTo?
-    let author: AssignedTo?
-    let assignedTo: AssignedTo?
     let subject: String?
     let description: String?
     let startDate: String?
     let doneRatio: Int?
     let estimatedHours: Int?
-    let customFields: [CustomFieldIssue]?
-    let createdOn: Date?
-    let updatedOn: Date?
+    let totalEstimatedHours: Int?
+    let spentHours: Double?
+    let totalSpentHours: Double?
+    let createdOn: String?
+    let updatedOn: String?
     
-    init(id: Int?, project: AssignedTo?, tracker: AssignedTo?, status: AssignedTo?, priority: AssignedTo?, author: AssignedTo?, assignedTo: AssignedTo?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, customFields: [CustomFieldIssue]?, createdOn: Date?, updatedOn: Date?) {
+    init(id: Int?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, totalEstimatedHours: Int?, spentHours: Double?, totalSpentHours: Double?, createdOn: String?, updatedOn: String?) {
         self.id = id
-        self.project = project
-        self.tracker = tracker
-        self.status = status
-        self.priority = priority
-        self.author = author
-        self.assignedTo = assignedTo
         self.subject = subject
         self.description = description
         self.startDate = startDate
         self.doneRatio = doneRatio
         self.estimatedHours = estimatedHours
-        self.customFields = customFields
+        self.totalEstimatedHours = totalEstimatedHours
+        self.spentHours = spentHours
+        self.totalSpentHours = totalSpentHours
         self.createdOn = createdOn
         self.updatedOn = updatedOn
     }

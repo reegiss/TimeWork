@@ -4,6 +4,8 @@
 <dict>
 	<key>baseUrl</key>
 	<string>https://projetos.supera.com.br</string>
+	<key>allIssues</key>
+	<string>/issues.json</string>
 	<key>currentUser</key>
 	<string>/users/current.json</string>
 </dict>

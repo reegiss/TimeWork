@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Book Regular.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bottom Alert Controller-->
+        <scene sceneID="sk1-9p-wzb">
+            <objects>
+                <viewController storyboardIdentifier="BottomAlertController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rER-p6-b4B" customClass="BottomAlertController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qfz-hb-7Mn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWm-H0-5Bk" userLabel="Alert Content Container View">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lzY-mw-wHx" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="36" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="DSX-NX-rVK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-kX-3eo" customClass="LightLabel" customModule="Example" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="355" height="60"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lzY-mw-wHx" secondAttribute="bottom" id="62G-E6-3ud"/>
+                                    <constraint firstItem="EfY-kX-3eo" firstAttribute="leading" secondItem="fWm-H0-5Bk" secondAttribute="leading" constant="10" id="EEX-yh-sMF"/>
+                                    <constraint firstItem="EfY-kX-3eo" firstAttribute="top" secondItem="fWm-H0-5Bk" secondAttribute="top" constant="10" id="Ie8-Ih-BGH"/>
+                                    <constraint firstAttribute="trailing" secondItem="EfY-kX-3eo" secondAttribute="trailing" constant="10" id="WNO-wC-Htq"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzY-mw-wHx" secondAttribute="trailing" id="h1K-kL-Xzq"/>
+                                    <constraint firstItem="lzY-mw-wHx" firstAttribute="leading" secondItem="fWm-H0-5Bk" secondAttribute="leading" id="sPT-IN-MDv"/>
+                                    <constraint firstAttribute="bottom" secondItem="EfY-kX-3eo" secondAttribute="bottom" constant="10" id="xrr-Jh-i48"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fWm-H0-5Bk" firstAttribute="height" secondItem="qfz-hb-7Mn" secondAttribute="height" multiplier="0.3" constant="-120" id="CxK-f3-9yE"/>
+                            <constraint firstItem="RLf-zZ-3a7" firstAttribute="bottom" secondItem="fWm-H0-5Bk" secondAttribute="bottom" id="GiJ-5Y-cX8"/>
+                            <constraint firstItem="fWm-H0-5Bk" firstAttribute="leading" secondItem="RLf-zZ-3a7" secondAttribute="leading" id="Sci-fm-Tja"/>
+                            <constraint firstItem="fWm-H0-5Bk" firstAttribute="trailing" secondItem="RLf-zZ-3a7" secondAttribute="trailing" id="r91-rF-PVQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RLf-zZ-3a7"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="textLabel" destination="EfY-kX-3eo" id="8tG-bp-dEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2y-Wb-eaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861.60000000000002" y="-116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
