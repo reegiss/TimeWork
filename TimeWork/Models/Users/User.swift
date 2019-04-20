@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+class User: Codable {
     let id: Int?
     let login: String?
     let firstname: String?
@@ -16,9 +16,18 @@ class User {
     let createdOn: Date?
     let lastLoginOn: Date?
     let apiKey: String?
-    let customFields: [CustomField]?
     
-    init(id: Int?, login: String?, firstname: String?, lastname: String?, createdOn: Date?, lastLoginOn: Date?, apiKey: String?, customFields: [CustomField]?) {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case login
+        case firstname
+        case lastname
+        case createdOn
+        case lastLoginOn
+        case apiKey = "api_key"
+    }
+    
+    init(id: Int?, login: String?, firstname: String?, lastname: String?, createdOn: Date?, lastLoginOn: Date?, apiKey: String?) {
         self.id = id
         self.login = login
         self.firstname = firstname
@@ -26,6 +35,5 @@ class User {
         self.createdOn = createdOn
         self.lastLoginOn = lastLoginOn
         self.apiKey = apiKey
-        self.customFields = customFields
     }
 }
