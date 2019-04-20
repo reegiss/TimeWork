@@ -25,4 +25,8 @@ class Endpoint {
         return EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "currentUser")
     }
     
+    static func getAllIssueUrl() -> String {
+        return EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "allIssues")
+    }
+    
 }
