@@ -31,7 +31,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_branco" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-lL-608">
-                                <rect key="frame" x="16" y="100" width="343.00000000000091" height="80"/>
+                                <rect key="frame" x="16" y="100" width="16" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="XEQ-pR-vyW"/>
@@ -64,6 +64,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gfW-gm-XAe" kind="show" id="wDl-r0-Jrx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,6 +114,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ShR-wC-Vql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1562.4000000000001" y="-115.59220389805098"/>
+        </scene>
+        <!--loginStoryboard-->
+        <scene sceneID="1BE-De-LYa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="loginStoryboard" id="gfW-gm-XAe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pW5-ez-TpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1562" y="336"/>
         </scene>
         <!--Tutorial Page View Controller-->
         <scene sceneID="Khx-fH-j5J">
