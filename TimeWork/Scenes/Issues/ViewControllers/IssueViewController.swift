@@ -42,6 +42,25 @@ class IssueViewController: UITableViewController {
             }
         }
     }
+    
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detailIssue",
+            let destinationViewController = segue.destination as? IssueDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+//                destinationViewController.idIssue.text? = "Teste"
+            
+            switch viewModel.issueCells.value[indexPath.row] {
+            case .normal(let viewModel):
+//                destinationViewController.parentId = (viewModel.projectItem.id)!
+                destinationViewController.title = (viewModel.issueItem.tracker?.name)! + " " +  String(describing: viewModel.issueItem.id!)
+                destinationViewController.issue = viewModel.issueItem
+            case .empty, .error:
+                // nop
+                break
+            }
+        }
+    }
 
 }
 
@@ -59,7 +78,7 @@ extension IssueViewController {
             self.showAlertMessage(message: "Não foi possivel carregar dados!")
         }, onCompleted: {
         }, onDisposed: {
-            self.view.stopLoading()
+            HUD.hide()
         }).disposed(by: disposeBag)
     }
 }

@@ -36,17 +36,18 @@ class TutorialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Reachability.isConnectedToNetwork() {
-            print("conexao ok")
-        } else {
-            print("sem conexao")
-        }
-                
+  
         self.addBlurArea(area: self.view.frame, style: .dark, alpha: 0.8)
         
         // Do any additional setup after loading the view.
         pageControl.addTarget(self, action: Selector(("didChangePageControlValue")), for: .valueChanged)
+        
+        if Reachability.isConnectedToNetwork() {
+            print("conexao ok")
+            
+        } else {
+            print("sem conexao")
+        }
         
     }
     

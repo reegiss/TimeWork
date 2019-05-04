@@ -41,6 +41,7 @@
 		A2073CAD226AD0D900AAEC03 /* IssueServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2073CAC226AD0D900AAEC03 /* IssueServices.swift */; };
 		A2073CAF226AD66700AAEC03 /* IssueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2073CAE226AD66700AAEC03 /* IssueRequest.swift */; };
 		A2073CB3226B8D3000AAEC03 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2073CB2226B8D3000AAEC03 /* ProfileViewController.swift */; };
+		A2166ACC227E11060038C3E3 /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2166ACB227E11060038C3E3 /* IssueDetailViewController.swift */; };
 		A26EC6EF226CF07B000B0917 /* RootProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC6EE226CF07B000B0917 /* RootProject.swift */; };
 		A282F2082269641A0039DAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2072269641A0039DAB4 /* AppDelegate.swift */; };
 		A282F20A2269641A0039DAB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282F2092269641A0039DAB4 /* ViewController.swift */; };
@@ -124,6 +125,7 @@
 		A2073CAC226AD0D900AAEC03 /* IssueServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueServices.swift; sourceTree = "<group>"; };
 		A2073CAE226AD66700AAEC03 /* IssueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRequest.swift; sourceTree = "<group>"; };
 		A2073CB2226B8D3000AAEC03 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A2166ACB227E11060038C3E3 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
 		A26EC6EE226CF07B000B0917 /* RootProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProject.swift; sourceTree = "<group>"; };
 		A282F2042269641A0039DAB4 /* TimeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282F2072269641A0039DAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 			isa = PBXGroup;
 			children = (
 				A2BEA370226C128E002B8DD6 /* IssueViewController.swift */,
+				A2166ACB227E11060038C3E3 /* IssueDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 				A2073C8A226A705F00AAEC03 /* LoadingConvenience.swift in Sources */,
 				A2BEA373226C1341002B8DD6 /* IssueViewModel.swift in Sources */,
 				A2073CB3226B8D3000AAEC03 /* ProfileViewController.swift in Sources */,
+				A2166ACC227E11060038C3E3 /* IssueDetailViewController.swift in Sources */,
 				A2BEA34F226BBE15002B8DD6 /* Result.swift in Sources */,
 				A2073C86226A6E9300AAEC03 /* HomeServices.swift in Sources */,
 				A2073CAB226AB32400AAEC03 /* Issue.swift in Sources */,

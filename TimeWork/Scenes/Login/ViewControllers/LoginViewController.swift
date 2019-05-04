@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import PKHUD
 
 class LoginViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class LoginViewController: UIViewController {
         self.serverTextField.text = "https://projetos.supera.com.br"
         self.loginTextField.text = "regis.melo"
         self.passwordTextField.text = "thmpv-8913"
+        self.login()
 //        self.addBlurArea(area: self.view.frame, style: .light, alpha: 0.8)
     }
     
@@ -39,7 +41,7 @@ extension LoginViewController {
     func login() {
         guard let userText = self.loginTextField.text else {return }
         guard let passwordText = self.passwordTextField.text else {return}
-        self.view.startLoading()
+        HUD.show(.progress)
         self.viewModel.login(user: userText, password: passwordText)
             .observeOn(MainScheduler.instance).subscribe(onNext: { (response) in
                 if response != nil {
@@ -47,12 +49,14 @@ extension LoginViewController {
                     let vc = storyboard.instantiateViewController(withIdentifier: "NavigatorViewController") as! NavigatorViewController
                     self.present(vc, animated: true, completion: nil)
                 }
-                
+                DispatchQueue.main.asyncAfter(deadline: .now()) {
+                    HUD.flash(.success, delay: 1.0)
+                }
             }, onError: { (error) in
                 self.showAlertMessage(message: "Usuário ou senha incorreto(s)!")
             }, onCompleted: {
             }, onDisposed: {
-                self.view.stopLoading()
+                HUD.hide(afterDelay: 0.5)
             }).disposed(by: disposeBag)
     }
 }

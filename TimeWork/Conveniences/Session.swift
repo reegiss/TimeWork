@@ -11,5 +11,4 @@ import Foundation
 class Session {
     static let shared = Session()
     var token: String?
-    var federalId: String?
 }

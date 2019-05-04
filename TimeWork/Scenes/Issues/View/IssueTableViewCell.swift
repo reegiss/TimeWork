@@ -14,7 +14,7 @@ class IssueTableViewCell: UITableViewCell {
     @IBOutlet weak var labelId: UILabel!
     @IBOutlet weak var labelSubject: UILabel!
     @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelIdentifier: UILabel!
+    @IBOutlet weak var labelProjectName: UILabel!
     
     var viewModel: IssueCellViewModel? {
         didSet {
@@ -26,5 +26,6 @@ class IssueTableViewCell: UITableViewCell {
         labelId.text = String(describing: viewModel?.issueItem.id ?? 0)
         labelName?.text = viewModel?.issueItem.description
         labelSubject?.text = viewModel?.issueItem.subject
+        labelProjectName.text = viewModel?.issueItem.project?.name
     }
 }

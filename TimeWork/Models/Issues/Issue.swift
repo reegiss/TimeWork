@@ -11,6 +11,8 @@ import Foundation
 class Issue: Codable {
     let id: Int?
     let project: Project?
+    let tracker:  Tracker?
+    let status: Status?
     let subject: String?
     let description: String?
     let startDate: String?
@@ -22,9 +24,11 @@ class Issue: Codable {
     let createdOn: String?
     let updatedOn: String?
     
-    init(id: Int?, project: Project?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, totalEstimatedHours: Int?, spentHours: Double?, totalSpentHours: Double?, createdOn: String?, updatedOn: String?) {
+    init(id: Int?, project: Project?, tracker: Tracker?, status: Status?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, totalEstimatedHours: Int?, spentHours: Double?, totalSpentHours: Double?, createdOn: String?, updatedOn: String?) {
         self.id = id
         self.project = project
+        self.tracker = tracker
+        self.status = status
         self.subject = subject
         self.description = description
         self.startDate = startDate
@@ -35,5 +39,15 @@ class Issue: Codable {
         self.totalSpentHours = totalSpentHours
         self.createdOn = createdOn
         self.updatedOn = updatedOn
+    }
+}
+
+class Status: Codable {
+    let id: Int?
+    let name: String?
+    
+    init(id: Int?, name: String?) {
+        self.id = id
+        self.name = name
     }
 }
