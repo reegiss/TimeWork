@@ -29,4 +29,20 @@ class Endpoint {
         return EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "allIssues")
     }
     
+    static func getIssueAssignedToUrl(assigned: String) -> String {
+        var issue = EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "getIssueAssignedTo")
+        issue = issue.replacingOccurrences(of: "{id}", with: assigned)
+        return issue
+    }
+    
+    static func getOneProjectUrl(id: String) -> String {
+        var project = EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "getOneProject")
+        project = project.replacingOccurrences(of: "{id}", with: id)
+        return project
+    }
+    
+    static func getAllProjectsUrl() -> String {
+        return EndpointType.REDMINE.baseUrl+URLInfo.url(fromKey: "getAllProject")
+    }
+    
 }

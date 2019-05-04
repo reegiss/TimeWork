@@ -45,7 +45,7 @@ class Service {
         }
         if auth {
             if let authToken = Session.shared.token {
-                request.addValue(authToken, forHTTPHeaderField: "X-Auth-Token")
+                request.addValue(authToken, forHTTPHeaderField: "X-Redmine-API-Key")
             }
         }
         return request

@@ -6,6 +6,12 @@
 	<string>https://projetos.supera.com.br</string>
 	<key>allIssues</key>
 	<string>/issues.json</string>
+	<key>getOneProject</key>
+	<string>/projects/{id}.json</string>
+	<key>getAllProject</key>
+	<string>/projects.json?limit=100</string>
+	<key>getIssueAssignedTo</key>
+	<string>/issues.json?assigned_to_id={id}</string>
 	<key>currentUser</key>
 	<string>/users/current.json</string>
 </dict>
