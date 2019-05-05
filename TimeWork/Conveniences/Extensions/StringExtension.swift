@@ -67,5 +67,18 @@ extension String {
         
         return formatter.string(from: number)!
     }
+    
+    func stringToDate() -> Date {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        var dateReturn: Date? = nil
+        if let date = formatter.date(from: self) {
+            dateReturn = date
+        }
+        return dateReturn!
+    }
+    
+    
 }
 

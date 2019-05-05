@@ -23,6 +23,7 @@ class IssueDetailViewController: UIViewController {
         subjectLabel.text = issue?.subject
         descriptionTextView.text = issue?.description
         statusTextField.text = issue?.status?.name
+//        print(issue?.createdOn?.stringToDate())
     }
     
 

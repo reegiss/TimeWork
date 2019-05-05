@@ -126,6 +126,7 @@
 		A2073CAE226AD66700AAEC03 /* IssueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRequest.swift; sourceTree = "<group>"; };
 		A2073CB2226B8D3000AAEC03 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A2166ACB227E11060038C3E3 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
+		A231AF7A227E3F20005DEA66 /* TimeWork.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimeWork.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A26EC6EE226CF07B000B0917 /* RootProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProject.swift; sourceTree = "<group>"; };
 		A282F2042269641A0039DAB4 /* TimeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282F2072269641A0039DAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -319,6 +320,7 @@
 				A282F20E2269641C0039DAB4 /* Assets.xcassets */,
 				A282F2102269641C0039DAB4 /* LaunchScreen.storyboard */,
 				A282F2132269641C0039DAB4 /* Info.plist */,
+				A231AF7A227E3F20005DEA66 /* TimeWork.playground */,
 			);
 			path = TimeWork;
 			sourceTree = "<group>";

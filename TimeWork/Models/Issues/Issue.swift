@@ -21,10 +21,27 @@ class Issue: Codable {
     let totalEstimatedHours: Int?
     let spentHours: Double?
     let totalSpentHours: Double?
-    let createdOn: String?
-    let updatedOn: String?
+    let createdOn: Date?
+    let updatedOn: Date?
     
-    init(id: Int?, project: Project?, tracker: Tracker?, status: Status?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, totalEstimatedHours: Int?, spentHours: Double?, totalSpentHours: Double?, createdOn: String?, updatedOn: String?) {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case project
+        case tracker
+        case status
+        case subject
+        case description
+        case startDate = "start_date"
+        case doneRatio = "done_ratio"
+        case estimatedHours = "estimated_hours"
+        case totalEstimatedHours = "total_estimated_hours"
+        case spentHours = "spent_hours"
+        case totalSpentHours = "total_spent_hours"
+        case createdOn = "created_on"
+        case updatedOn = "updated_on"
+    }
+    
+    init(id: Int?, project: Project?, tracker: Tracker?, status: Status?, subject: String?, description: String?, startDate: String?, doneRatio: Int?, estimatedHours: Int?, totalEstimatedHours: Int?, spentHours: Double?, totalSpentHours: Double?, createdOn: Date?, updatedOn: Date?) {
         self.id = id
         self.project = project
         self.tracker = tracker

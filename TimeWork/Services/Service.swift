@@ -181,6 +181,7 @@ extension URLRequest {
                     do {
                         let deco = JSONDecoder()
 //                        deco.keyDecodingStrategy = .convertFromSnakeCase
+                        deco.dateDecodingStrategy = .iso8601
                         let serializedObject = try deco.decode(SuccessObjectType.self, from: data)
                         success(serializedObject, serviceResponse)
                     } catch let parserError {

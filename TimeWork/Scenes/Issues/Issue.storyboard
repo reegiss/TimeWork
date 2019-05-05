@@ -14,7 +14,7 @@
         <scene sceneID="xJ0-Yr-NJY">
             <objects>
                 <tableViewController storyboardIdentifier="issueStoryboard" title="Tarefas" id="YeN-BQ-p4u" customClass="IssueViewController" customModule="TimeWork" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DSg-Es-wer">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DSg-Es-wer">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,24 +97,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abf-jh-7y7" customClass="RoundButton" customModule="TimeWork" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="875" width="374" height="30"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="0.75244671110000005" green="0.4333918095" blue="0.1547987461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.75244671110000005" green="0.4333918095" blue="0.1547987461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhD-1v-hKd">
                                                 <rect key="frame" x="20" y="40" width="57" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -154,6 +136,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abf-jh-7y7" customClass="RoundButton" customModule="TimeWork" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="870" width="374" height="44"/>
+                                                <color key="backgroundColor" red="0.75244671110000005" green="0.4333918095" blue="0.1547987461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="pJa-1B-2df"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Iniciar Atividade">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.75244671110000005" green="0.4333918095" blue="0.1547987461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -166,7 +170,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Mmh-ev-DnW" secondAttribute="trailing" constant="20" id="g25-Xg-bC2"/>
                                             <constraint firstAttribute="trailing" secondItem="abf-jh-7y7" secondAttribute="trailing" constant="20" id="gpd-7w-Dpc"/>
                                             <constraint firstItem="tKK-am-42I" firstAttribute="leading" secondItem="tIJ-2f-CtK" secondAttribute="leading" constant="20" id="hUo-dk-svp"/>
-                                            <constraint firstAttribute="bottom" secondItem="abf-jh-7y7" secondAttribute="bottom" constant="17" id="mlo-ct-j6g"/>
+                                            <constraint firstAttribute="bottom" secondItem="abf-jh-7y7" secondAttribute="bottom" constant="8" id="mlo-ct-j6g"/>
                                             <constraint firstAttribute="trailing" secondItem="QbQ-HZ-o27" secondAttribute="trailing" constant="20" id="oEH-Wv-GQS"/>
                                             <constraint firstItem="ZhD-1v-hKd" firstAttribute="leading" secondItem="tIJ-2f-CtK" secondAttribute="leading" constant="20" id="q9o-Vq-fn0"/>
                                             <constraint firstAttribute="trailing" secondItem="tKK-am-42I" secondAttribute="trailing" constant="20" id="rv9-7G-fZW"/>
